@@ -1,3 +1,18 @@
+/*
+Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
+
+Input Format
+
+Integer N.
+Integer Array of size N.
+
+Constraints
+
+1 <= N <= 10^6
+0 <= A[i] <= 2
+
+*/
+
 import java.io.*;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,7 +46,7 @@ public class SortArray {
                 mid++;
             } else if (val == 1) {
                 mid++;
-            } else { // val == 2
+            } else { 
                 Collections.swap(arr, mid, high);
                 high--;
             }
